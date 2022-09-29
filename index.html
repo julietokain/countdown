@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div class="input-box">
+            <input type="text" id="timer-hour" maxlength="2" value="00"> <p>:</p>
+            <input type="text" id="timer-minute" maxlength="2" value="00"><p>:</p>
+            <input type="text" id="timer-second" maxlength="2" value="00">
+        </div>
+        <div class="app">
+            <button id="start-timer" onclick="startTimer()">Start</button>
+            <button id="pause-timer" onclick="pauseTimer()">Pause</button>
+            <button id="reset-timer" onclick="resetTimer()">Reset</button>
+        </div>
+
+    </div>
+
+    <div class="clock-container">
+        <div class="app">
+         <p id="clock"></p>
+        </div>
+
+    </div>
+
+    <div class="stopwatch-container">
+        <div class="app">
+            <p id="stopwatch"></p>
+            <button id="start-stopwatch" onclick="startTimer()">Start</button>
+            <button id="pause-stopWatch" onclick="stopTimer()">Pause</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
